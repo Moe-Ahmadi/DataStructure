@@ -7,18 +7,45 @@
 #include <iostream>
 using namespace std;
 
+int globalValue = 10;
+
+void conditionTest();  //this is declaration  for condition test.
+void globalTest(); //this is declaration for global test.
+void helloWorldTest(); //this is declaration for hello world test.
+
 int main() {
-	int age;
-	int idNumber;
-	cout <<"Please enter your age: ";
-	cin >>age;
-	cout <<"Please enter you id number: ";
-	cin >>idNumber;
-
-
-	cout << "the age is: " <<age <<"\nthe id number is:" <<idNumber;
+	conditionTest();
+	//globalTest();
+	//helloWorldTest();
 
 	return 0;
+
+}
+void conditionTest() {   // this is implementation of condition test.
+	cout << "please enter your number";
+	int a;
+	cin>>a;
+	if(a > 0) {
+		cout <<"it is positive"<<endl;
+	}else if(a < 0) {
+		cout <<"it is negative"<<endl;
+	}else{
+		cout <<"it is zero" <<endl;
+	}
+
+
+}
+void globalTest() { //this is implementation of condition.
+	cout <<"this is global value: " <<globalValue <<endl;
+}
+void helloWorldTest() { //this is implementation of conditions.
+	int age;
+		int idNumber;
+		cout <<"Please enter your age: ";
+		cin >>age;
+		cout <<"Please enter you id number: ";
+		cin >>idNumber;
+		cout << "the age is: " <<age <<"\n"<<"the id number is:" <<idNumber;
 
 }
 
