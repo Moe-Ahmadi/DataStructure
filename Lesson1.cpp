@@ -13,11 +13,13 @@ void conditionTest();  //this is declaration  for condition test.
 void globalTest(); //this is declaration for global test.
 void helloWorldTest(); //this is declaration for hello world test.
 void specialCharTest();
+void stringTest();
 int main() {
 	//conditionTest();
 	//globalTest();
 	//helloWorldTest();
-	specialCharTest();
+	//specialCharTest();
+	stringTest();
 
 
 	return 0;
@@ -53,7 +55,16 @@ void helloWorldTest() { //this is implementation of conditions.
 }
 void specialCharTest() {
 	cout << "i am using \"double quote\" to practice"<<endl;
-	cout <<"\tI\t"<<"Name\t"<<"Dept\t"<<"school";
+	cout <<"Id\t"<<"Name\t"<<"Department\t"<<"school";
+
+
+}
+void stringTest() {
+char str[] = "welcome to my world";
+char firstChar = 'm';
+cout.write(str, 6)<<endl;
+
+cout.put(firstChar);
 
 
 }
