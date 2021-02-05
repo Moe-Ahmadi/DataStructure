@@ -12,11 +12,13 @@ int globalValue = 10;
 void conditionTest();  //this is declaration  for condition test.
 void globalTest(); //this is declaration for global test.
 void helloWorldTest(); //this is declaration for hello world test.
-
+void specialCharTest();
 int main() {
-	conditionTest();
+	//conditionTest();
 	//globalTest();
 	//helloWorldTest();
+	specialCharTest();
+
 
 	return 0;
 
@@ -37,6 +39,7 @@ void conditionTest() {   // this is implementation of condition test.
 }
 void globalTest() { //this is implementation of condition.
 	cout <<"this is global value: " <<globalValue <<endl;
+
 }
 void helloWorldTest() { //this is implementation of conditions.
 	int age;
@@ -46,6 +49,12 @@ void helloWorldTest() { //this is implementation of conditions.
 		cout <<"Please enter you id number: ";
 		cin >>idNumber;
 		cout << "the age is: " <<age <<"\n"<<"the id number is:" <<idNumber;
+
+}
+void specialCharTest() {
+	cout << "i am using \"double quote\" to practice"<<endl;
+	cout <<"\tI\t"<<"Name\t"<<"Dept\t"<<"school";
+
 
 }
 
