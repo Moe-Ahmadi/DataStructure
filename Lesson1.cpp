@@ -5,6 +5,7 @@
  *      Author: amohamadreza2113
  */
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int globalValue = 10;
@@ -16,6 +17,7 @@ void specialCharTest();
 void stringTest();
 void testOfStr();
 void cinTest();
+void streamTest();
 
 int main() {
 	//conditionTest();
@@ -24,7 +26,8 @@ int main() {
 	//specialCharTest();
 	//stringTest();
 	//testOfStr();
-	cinTest();
+	//cinTest();
+	streamTest();
 
 
 	return 0;
@@ -90,5 +93,13 @@ cin.getline(address, 20);
 cin.get(buff, 5);
 cout << "Insert characters in buffer: ";
 cout << buff;
+}
+void streamTest() {
+ofstream file;
+file.open ("sample.txt");
+file << "Welcome to class" <<endl;
+file << "C++ for Java Programmers! ";
+cout << "success...";
+file.close();
 }
 
