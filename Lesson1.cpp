@@ -15,6 +15,7 @@ void helloWorldTest(); //this is declaration for hello world test.
 void specialCharTest();
 void stringTest();
 void testOfStr();
+void cinTest();
 
 int main() {
 	//conditionTest();
@@ -22,7 +23,8 @@ int main() {
 	//helloWorldTest();
 	//specialCharTest();
 	//stringTest();
-	testOfStr();
+	//testOfStr();
+	cinTest();
 
 
 	return 0;
@@ -78,5 +80,15 @@ cout.write(str, 5)<<endl;
 
 cout.put(firstCharacter);
 }
-
+void cinTest() {
+char name[20], address[20];
+char buff[10];
+cout << "Name: ";
+cin.getline(name, 20);
+cout << "Address: ";
+cin.getline(address, 20);
+cin.get(buff, 5);
+cout << "Insert characters in buffer: ";
+cout << buff;
+}
 
