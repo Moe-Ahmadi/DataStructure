@@ -14,12 +14,15 @@ void globalTest(); //this is declaration for global test.
 void helloWorldTest(); //this is declaration for hello world test.
 void specialCharTest();
 void stringTest();
+void testOfStr();
+
 int main() {
 	//conditionTest();
 	//globalTest();
 	//helloWorldTest();
 	//specialCharTest();
-	stringTest();
+	//stringTest();
+	testOfStr();
 
 
 	return 0;
@@ -68,6 +71,12 @@ cout.put(firstChar);
 
 
 }
+void testOfStr(){
+char str[] = "tonight is the game";
+char firstCharacter = 't';
+cout.write(str, 5)<<endl;
 
+cout.put(firstCharacter);
+}
 
 
